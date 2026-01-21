@@ -17,39 +17,48 @@ const skills = [
   {
     name: 'C Programming',
     icon: <Code className="h-10 w-10" />,
+    highlighted: true,
   },
-  { name: 'Java', icon: <Coffee className="h-10 w-10" /> },
+  { name: 'Java', icon: <Coffee className="h-10 w-10" />, highlighted: true },
   {
     name: 'AWS Basics',
     icon: <Cloud className="h-10 w-10" />,
+    highlighted: true,
   },
   {
     name: 'Firebase',
     icon: <Database className="h-10 w-10" />,
+    highlighted: true,
   },
   {
     name: 'HTML',
     icon: <FileCode className="h-10 w-10" />,
+    highlighted: true,
   },
   {
     name: 'CSS',
     icon: <Paintbrush className="h-10 w-10" />,
+    highlighted: true,
   },
   {
     name: 'Figma',
     icon: <PenTool className="h-10 w-10" />,
+    highlighted: true,
   },
   {
     name: 'Canva',
     icon: <LayoutTemplate className="h-10 w-10" />,
+    highlighted: true,
   },
   {
     name: 'DaVinci Resolve (Basics)',
     icon: <Film className="h-10 w-10" />,
+    highlighted: true,
   },
   {
     name: 'Capcut',
     icon: <Scissors className="h-10 w-10" />,
+    highlighted: true,
   },
 ];
 
