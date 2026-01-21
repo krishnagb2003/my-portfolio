@@ -12,6 +12,9 @@ import {
   SheetContent,
   SheetClose,
   SheetTrigger,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
 } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 
@@ -31,7 +34,13 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left">
-                <nav className="grid gap-6 p-6 text-lg font-medium">
+                <SheetHeader className="sr-only">
+                  <SheetTitle>Menu</SheetTitle>
+                  <SheetDescription>
+                    Main navigation links for the portfolio.
+                  </SheetDescription>
+                </SheetHeader>
+                <nav className="grid gap-6 text-lg font-medium">
                   <SheetClose asChild>
                     <Link
                       href="#"
