@@ -81,7 +81,9 @@ export function Header() {
           <nav className="hidden items-center gap-4 text-sm font-medium md:flex">
             <Menubar className="rounded-none border-none bg-transparent shadow-none">
               <MenubarMenu>
-                <MenubarTrigger className="font-semibold">Menu</MenubarTrigger>
+                <MenubarTrigger>
+                  <Menu className="h-6 w-6" />
+                </MenubarTrigger>
                 <MenubarContent>
                   <MenubarItem asChild>
                     <Link href="#about">About</Link>
