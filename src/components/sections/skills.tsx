@@ -4,13 +4,13 @@ import {
   Cloud,
   Code,
   Coffee,
-  Database,
   Film,
   FileCode,
   LayoutTemplate,
   Paintbrush,
-  PenTool,
   Scissors,
+  Flame,
+  Figma,
 } from 'lucide-react';
 
 const skills = [
@@ -27,7 +27,7 @@ const skills = [
   },
   {
     name: 'Firebase',
-    icon: <Database className="h-10 w-10" />,
+    icon: <Flame className="h-10 w-10" />,
     highlighted: true,
   },
   {
@@ -42,7 +42,7 @@ const skills = [
   },
   {
     name: 'Figma',
-    icon: <PenTool className="h-10 w-10" />,
+    icon: <Figma className="h-10 w-10" />,
     highlighted: true,
   },
   {
