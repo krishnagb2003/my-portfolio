@@ -40,57 +40,17 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, children, ...props }, ref) => {
-    const Comp = asChild ? Slot : 'button';
-
-    const applyMask = variant !== 'link' && variant !== 'destructive';
-
-    if (!applyMask) {
-      // Render without mask for link and destructive variants
-      return (
-        <Comp
-          className={cn(buttonVariants({ variant, size, className }))}
-          ref={ref}
-          {...props}
-        >
-          {children}
-        </Comp>
-      );
-    }
-
-    const MaskedSpan = ({ children }: { children: React.ReactNode }) => (
-      <span className="animate-text-mask bg-gradient-to-r from-primary to-primary/60 bg-[length:200%_auto] bg-clip-text text-transparent">
-        {children}
-      </span>
-    );
-
-    if (asChild) {
-      const child = React.Children.only(children) as React.ReactElement;
-      return (
-        <Comp
-          className={cn(buttonVariants({ variant, size, className }))}
-          ref={ref}
-          {...props}
-        >
-          {React.cloneElement(child, {
-            ...child.props,
-            children: <MaskedSpan>{child.props.children}</MaskedSpan>,
-          })}
-        </Comp>
-      );
-    }
-
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button"
     return (
-      <button
+      <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-      >
-        <MaskedSpan>{children}</MaskedSpan>
-      </button>
-    );
+      />
+    )
   }
-);
+)
 Button.displayName = "Button"
 
 export { Button, buttonVariants }
