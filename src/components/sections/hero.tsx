@@ -28,9 +28,10 @@ export function Hero() {
             Krishnakumar
           </h1>
           <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl">
-            Final Year Engineering Student & Web Developer specializing in
-            React, TypeScript, and Java. Transforming ideas into modern,
-            scalable web applications.
+            Software Engineering Student | Java & Data Systems I engineer robust
+            software solutions with a primary focus on Java and enterprise-level
+            scalability. By leveraging Big Data and AWS Cloud environments, I
+            create systems designed for high-stakes performance.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button asChild size="lg">
