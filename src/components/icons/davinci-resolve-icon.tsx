@@ -11,9 +11,10 @@ export function DavinciResolveIcon(props: React.SVGProps<SVGSVGElement>) {
       {...props}
     >
       <circle cx="12" cy="12" r="10" />
-      <path d="m9.5 8 3 3 3-3" />
-      <path d="m9.5 12 3 3 3-3" />
-      <path d="m9.5 16 3 3 3-3" />
+      <circle cx="12" cy="12" r="3" />
+      <circle cx="17" cy="7" r="1" />
+      <circle cx="7" cy="7" r="1" />
+      <circle cx="12" cy="17" r="1" />
     </svg>
   );
 }
