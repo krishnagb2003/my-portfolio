@@ -27,7 +27,11 @@ export function Hero() {
         <div className="flex flex-col items-center space-y-6 text-center lg:col-span-2">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
             <TextAnimation
-              words={['PORTFOLIO OF KRISHNAKUMAR']}
+              words={[
+                'PORTFOLIO OF KRISHNAKUMAR',
+                'SOFTWARE ENGINEER',
+                'CREATIVE DEVELOPER',
+              ]}
               className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
             />
           </div>
