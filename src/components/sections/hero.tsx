@@ -39,8 +39,7 @@ export function Hero() {
           </div>
           <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
             A software engineering student focused on enterprise-level
-            scalability. By leveraging Big Data and{' '}
-            <strong className="font-bold text-primary">AWS</strong> Cloud
+            scalability. By leveraging Big Data and AWS Cloud
             environments, I create systems designed for high-stakes performance.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
@@ -70,7 +69,7 @@ export function Hero() {
           )}
         </div>
       </div>
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
         <Link
           href="#about"
           aria-label="Scroll to next section"
