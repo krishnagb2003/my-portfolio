@@ -57,9 +57,16 @@ export function Contact() {
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Get in Touch
           </h2>
-          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Have a project in mind or just want to say hi? Feel free to reach
-            out.
+            out. You can email me directly at{' '}
+            <a
+              href="mailto:krishnagbhadrashetti@gmail.com"
+              className="font-medium text-primary underline"
+            >
+              krishnagbhadrashetti@gmail.com
+            </a>{' '}
+            or use the form below.
           </p>
         </div>
         <div className="mx-auto w-full max-w-lg space-y-8">

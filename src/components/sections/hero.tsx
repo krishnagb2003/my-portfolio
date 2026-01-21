@@ -21,7 +21,7 @@ export function Hero() {
             </div>
           </div>
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Alex Doe
+            Krishnakumar
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground md:text-xl">
             Final Year Engineering Student & Web Developer specializing in
