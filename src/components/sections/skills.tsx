@@ -10,6 +10,7 @@ import {
   Palette,
   Scissors,
 } from 'lucide-react';
+import { DavinciResolveIcon } from '@/components/icons/davinci-resolve-icon';
 
 const skills = [
   {
@@ -43,7 +44,7 @@ const skills = [
   },
   {
     name: 'DaVinci Resolve (Basics)',
-    icon: <Scissors className="h-10 w-10" />,
+    icon: <DavinciResolveIcon className="h-10 w-10" />,
   },
   {
     name: 'Capcut',
