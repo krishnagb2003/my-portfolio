@@ -114,7 +114,7 @@ export function Header() {
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <NegativeMaskEffect>
-              <span className="text-lg font-bold font-headline">Portfolio</span>
+              <span className="text-xl font-bold font-headline">Portfolio</span>
             </NegativeMaskEffect>
           </Link>
         </div>
