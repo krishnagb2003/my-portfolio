@@ -17,8 +17,11 @@ import {
   SheetDescription,
 } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Header() {
+  const avatarImage = PlaceHolderImages.find((p) => p.id === 'avatar');
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b bg-background/80 backdrop-blur-sm">
       <div className="container relative mx-auto flex h-16 items-center justify-between px-4 md:px-6">
@@ -117,10 +120,14 @@ export function Header() {
         </div>
 
         {/* Right Side: Contact Button */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-4">
           <Button asChild>
             <Link href="#contact">Contact</Link>
           </Button>
+          <Avatar>
+            {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} />}
+            <AvatarFallback>K</AvatarFallback>
+          </Avatar>
         </div>
       </div>
     </header>
