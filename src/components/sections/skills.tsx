@@ -4,61 +4,51 @@ import {
   Cloud,
   Code,
   Coffee,
-  Clapperboard,
   FileCode,
-  DraftingCompass,
-  Paintbrush,
-  Scissors,
   Flame,
   Figma,
+  Paintbrush,
+  Palette,
+  Scissors,
 } from 'lucide-react';
 
 const skills = [
   {
     name: 'C Programming',
     icon: <Code className="h-10 w-10" />,
-    highlighted: true,
   },
-  { name: 'Java', icon: <Coffee className="h-10 w-10" />, highlighted: true },
+  { name: 'Java', icon: <Coffee className="h-10 w-10" /> },
   {
     name: 'AWS Basics',
     icon: <Cloud className="h-10 w-10" />,
-    highlighted: true,
   },
   {
     name: 'Firebase',
     icon: <Flame className="h-10 w-10" />,
-    highlighted: true,
   },
   {
     name: 'HTML',
     icon: <FileCode className="h-10 w-10" />,
-    highlighted: true,
   },
   {
     name: 'CSS',
     icon: <Paintbrush className="h-10 w-10" />,
-    highlighted: true,
   },
   {
     name: 'Figma',
     icon: <Figma className="h-10 w-10" />,
-    highlighted: true,
   },
   {
     name: 'Canva',
-    icon: <DraftingCompass className="h-10 w-10" />,
-    highlighted: true,
+    icon: <Palette className="h-10 w-10" />,
   },
   {
     name: 'DaVinci Resolve (Basics)',
-    icon: <Clapperboard className="h-10 w-10" />,
-    highlighted: true,
+    icon: <Scissors className="h-10 w-10" />,
   },
   {
     name: 'Capcut',
     icon: <Scissors className="h-10 w-10" />,
-    highlighted: true,
   },
 ];
 
@@ -77,26 +67,15 @@ export function Skills() {
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-2 justify-items-center gap-8 py-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 md:gap-12">
-          {skills.map((skill: {name: string, icon: JSX.Element, highlighted?: boolean}) => (
+          {skills.map((skill: { name: string; icon: JSX.Element }) => (
             <div
               key={skill.name}
-              className="flex flex-col items-center justify-center gap-2 text-center"
+              className="group flex flex-col items-center justify-center gap-2 text-center"
             >
-              <div
-                className={cn(
-                  'flex h-24 w-24 items-center justify-center border-2 border-border bg-card shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-all duration-300 hover:shadow-[6px_6px_0px_0px_hsl(var(--primary))]',
-                  skill.highlighted &&
-                    'shadow-[6px_6px_0px_0px_hsl(var(--primary))] text-primary'
-                )}
-              >
+              <div className="flex h-24 w-24 items-center justify-center border-2 border-border bg-card text-foreground shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-all duration-300 group-hover:text-primary group-hover:shadow-[6px_6px_0px_0px_hsl(var(--primary))]">
                 {skill.icon}
               </div>
-              <p
-                className={cn(
-                  'text-lg font-semibold',
-                  skill.highlighted && 'text-primary'
-                )}
-              >
+              <p className="text-lg font-semibold text-foreground transition-colors duration-300 group-hover:text-primary">
                 {skill.name}
               </p>
             </div>
