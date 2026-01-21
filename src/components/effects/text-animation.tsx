@@ -1,18 +1,27 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
 
-const words = ['PORTFOLIO OF KRISHNAKUMAR'];
 const typingDelay = 150;
 const erasingDelay = 100;
 const newWordDelay = 2000;
 
-export function TextAnimation() {
+export function TextAnimation({
+  words,
+  className,
+  as: Tag = 'h1',
+}: {
+  words: string[];
+  className?: string;
+  as?: React.ElementType;
+}) {
   const [text, setText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
+    if (!words || words.length === 0) return;
     const currentWord = words[wordIndex];
 
     const handleTyping = () => {
@@ -37,12 +46,12 @@ export function TextAnimation() {
     const timer = setTimeout(handleTyping, typingSpeed);
 
     return () => clearTimeout(timer);
-  }, [text, isDeleting, wordIndex]);
+  }, [text, isDeleting, wordIndex, words]);
 
   return (
-    <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+    <Tag className={cn(className)}>
       {text}
       <span className="animate-pulse font-light text-primary">|</span>
-    </h1>
+    </Tag>
   );
 }

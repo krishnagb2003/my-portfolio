@@ -26,13 +26,16 @@ export function Hero() {
         {/* Left column - Text content */}
         <div className="flex flex-col items-center space-y-6 text-center lg:col-span-2">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <TextAnimation />
+            <TextAnimation
+              words={['PORTFOLIO OF KRISHNAKUMAR']}
+              className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
+            />
           </div>
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
             <p className="text-lg font-medium text-muted-foreground md:text-xl">
               <span className="font-semibold text-primary">Java</span> |{' '}
               <span className="font-semibold text-primary">Web Apps</span> |{' '}
-              <span className="font-semibold text-primary">
+              <span className="font-semibold">
                 Cloud Computing
               </span>
             </p>

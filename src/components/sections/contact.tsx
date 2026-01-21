@@ -20,6 +20,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { submitContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
 import { contactSchema } from '@/lib/schemas';
+import { TextAnimation } from '../effects/text-animation';
 
 export function Contact() {
   const { toast } = useToast();
@@ -54,9 +55,11 @@ export function Contact() {
       <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
           <Badge variant="outline">Contact</Badge>
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Get in Touch
-          </h2>
+          <TextAnimation
+            as="h2"
+            words={["LET'S WORK TOGETHER"]}
+            className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+          />
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Have a project in mind or just want to say hi? Feel free to reach
             out. You can email me directly at{' '}
