@@ -2,6 +2,10 @@ import { Badge } from '@/components/ui/badge';
 import { Cloud, Coffee, Edit } from 'lucide-react';
 
 const skills = [
+  {
+    name: 'C Programming',
+    icon: <span className="text-3xl font-bold text-muted-foreground">C</span>,
+  },
   { name: 'Java', icon: <Coffee className="h-10 w-10" /> },
   { name: 'AWS Basics', icon: <Cloud className="h-10 w-10" /> },
   {
@@ -32,10 +36,6 @@ const skills = [
   {
     name: 'Capcut',
     icon: <span className="text-3xl font-bold text-muted-foreground">CC</span>,
-  },
-  {
-    name: 'C Programming',
-    icon: <span className="text-3xl font-bold text-muted-foreground">C</span>,
   },
 ];
 
