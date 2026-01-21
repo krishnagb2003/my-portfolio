@@ -10,15 +10,9 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import { GenerateHeroImageInputSchema, GenerateHeroImageOutputSchema } from '@/ai/schemas';
 
-const GenerateHeroImageInputSchema = z.object({
-  prompt: z.string().describe('A detailed description of the desired hero image.'),
-});
 export type GenerateHeroImageInput = z.infer<typeof GenerateHeroImageInputSchema>;
-
-const GenerateHeroImageOutputSchema = z.object({
-  imageUrl: z.string().describe('The URL of the generated hero image as a data URI.'),
-});
 export type GenerateHeroImageOutput = z.infer<typeof GenerateHeroImageOutputSchema>;
 
 export async function generateHeroImage(input: GenerateHeroImageInput): Promise<GenerateHeroImageOutput> {

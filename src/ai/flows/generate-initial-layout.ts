@@ -10,17 +10,9 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-
-const GenerateInitialLayoutInputSchema = z.object({
-  prompt: z.string().describe('A detailed prompt describing the desired UI layout for the portfolio.')
-});
+import { GenerateInitialLayoutInputSchema, GenerateInitialLayoutOutputSchema } from '@/ai/schemas';
 
 export type GenerateInitialLayoutInput = z.infer<typeof GenerateInitialLayoutInputSchema>;
-
-const GenerateInitialLayoutOutputSchema = z.object({
-  layout: z.string().describe('The generated UI layout in a suitable format (e.g., HTML, JSON, or a description).')
-});
-
 export type GenerateInitialLayoutOutput = z.infer<typeof GenerateInitialLayoutOutputSchema>;
 
 
