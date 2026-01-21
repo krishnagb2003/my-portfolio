@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { TextAnimation } from '@/components/effects/text-animation';
+import { ChevronDown } from 'lucide-react';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image');
@@ -63,6 +64,15 @@ export function Hero() {
             </div>
           )}
         </div>
+      </div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+        <Link
+          href="#about"
+          aria-label="Scroll to next section"
+          className="transition-colors hover:text-primary"
+        >
+          <ChevronDown className="h-8 w-8 animate-bounce" />
+        </Link>
       </div>
     </section>
   );
