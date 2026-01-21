@@ -43,8 +43,8 @@ export function Projects() {
     <section id="projects" className="w-full bg-card py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <Badge>Projects</Badge>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
+          <Badge variant="outline">Projects</Badge>
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
             My Featured Work
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -56,17 +56,19 @@ export function Projects() {
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="flex flex-col overflow-hidden border-2 border-border shadow-[8px_8px_0px_0px_hsl(var(--border))] transition-shadow duration-300 hover:shadow-[8px_8px_0px_0px_hsl(var(--primary))]"
+              className="group flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20"
             >
               {project.image && (
-                <Image
-                  src={project.image.imageUrl}
-                  alt={project.image.description}
-                  data-ai-hint={project.image.imageHint}
-                  width={600}
-                  height={400}
-                  className="aspect-video w-full object-cover"
-                />
+                <div className="overflow-hidden">
+                  <Image
+                    src={project.image.imageUrl}
+                    alt={project.image.description}
+                    data-ai-hint={project.image.imageHint}
+                    width={600}
+                    height={400}
+                    className="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  />
+                </div>
               )}
               <CardHeader>
                 <CardTitle className="font-headline text-2xl">
@@ -86,10 +88,11 @@ export function Projects() {
               <div className="p-6 pt-0">
                 <Link
                   href={project.link}
-                  className="inline-flex items-center gap-2 font-semibold text-primary"
+                  className="group/link inline-flex items-center gap-2 font-semibold text-primary"
                   prefetch={false}
                 >
-                  View Project <ArrowRight className="h-4 w-4" />
+                  View Project{' '}
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                 </Link>
               </div>
             </Card>

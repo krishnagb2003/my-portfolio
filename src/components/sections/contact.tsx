@@ -53,8 +53,8 @@ export function Contact() {
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
-          <Badge>Contact</Badge>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
+          <Badge variant="outline">Contact</Badge>
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Get in Touch
           </h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -75,11 +75,7 @@ export function Contact() {
                   <FormItem>
                     <FormLabel>Name</FormLabel>
                     <FormControl>
-                      <Input
-                        placeholder="Your Name"
-                        {...field}
-                        className="border-2 shadow-[4px_4px_0px_0px_hsl(var(--border))]"
-                      />
+                      <Input placeholder="Your Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -96,7 +92,6 @@ export function Contact() {
                         type="email"
                         placeholder="your.email@example.com"
                         {...field}
-                        className="border-2 shadow-[4px_4px_0px_0px_hsl(var(--border))]"
                       />
                     </FormControl>
                     <FormMessage />
@@ -113,7 +108,7 @@ export function Contact() {
                       <Textarea
                         placeholder="Tell me about your project..."
                         {...field}
-                        className="min-h-[120px] border-2 shadow-[4px_4px_0px_0px_hsl(var(--border))]"
+                        className="min-h-[120px]"
                       />
                     </FormControl>
                     <FormMessage />
@@ -122,7 +117,7 @@ export function Contact() {
               />
               <Button
                 type="submit"
-                className="w-full border-2 border-primary/50 shadow-[4px_4px_0px_0px_hsl(var(--primary))] transition-shadow duration-200 hover:shadow-none"
+                className="w-full"
                 disabled={form.formState.isSubmitting}
               >
                 {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
