@@ -40,11 +40,11 @@ export function Projects() {
             My Featured Work
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Here are some of the projects I&apos;m proud of. Each one represents
+            Here are some of the projects I'm proud of. Each one represents
             a challenge I was excited to tackle.
           </p>
         </div>
-        <div className="grid gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 py-12 md:grid-cols-2">
           {projects.map((project) => (
             <Card
               key={project.title}

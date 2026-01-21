@@ -9,8 +9,8 @@
     {
       "id": "project-1",
       "description": "AdSync: Personalized ads by Eye-Tracking",
-      "imageUrl": "https://images.unsplash.com/photo-1587614299498-28347e3473b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxleWUlMjB0cmFja2luZyUyMGFkJTIwcGVyc29uYWxpemF0aW9ufGVufDB8fHx8MTc3MDEzMDUyMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "eye tracking advertising"
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb25hbGl6ZWQlMjBhZHZlcnRpc2luZ3xlbnwwfHx8fDE3NzAyMTI4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "personalized advertising"
     },
     {
       "id": "project-2",
