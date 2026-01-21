@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui/badge';
-import { Cloud, Coffee, Edit } from 'lucide-react';
+import { Cloud, Coffee } from 'lucide-react';
 
 const skills = [
   {
@@ -28,7 +28,6 @@ const skills = [
     name: 'Canva',
     icon: <span className="text-3xl font-bold text-muted-foreground">CV</span>,
   },
-  { name: 'Editing', icon: <Edit className="h-10 w-10" /> },
   {
     name: 'DaVinci Resolve (Basics)',
     icon: <span className="text-3xl font-bold text-muted-foreground">DR</span>,
