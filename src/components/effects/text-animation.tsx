@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const words = ['KRISHNAKUMAR'];
+const words = ['KRISHNAKUMAR', 'DEVELOPER PORTFOLIO'];
 const typingDelay = 150;
 const erasingDelay = 100;
 const newWordDelay = 2000;
@@ -27,6 +27,7 @@ export function TextAnimation() {
         // Type character
         setText(currentWord.substring(0, text.length + 1));
         if (text.length + 1 === currentWord.length) {
+          // Pause at the end of the word
           setTimeout(() => setIsDeleting(true), newWordDelay);
         }
       }
