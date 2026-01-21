@@ -29,8 +29,9 @@ export function About() {
               <div>
                 <h3 className="text-lg font-semibold">AWS 10-Day Workshop</h3>
                 <p className="text-sm text-muted-foreground">
-                  Completed an intensive workshop covering core AWS services and
-                  cloud architecture principles.
+                  Completed an intensive workshop covering core{' '}
+                  <strong className="font-bold text-primary">AWS</strong>{' '}
+                  services and cloud architecture principles.
                 </p>
               </div>
             </div>

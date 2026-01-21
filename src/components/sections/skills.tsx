@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 import { Cloud, Coffee } from 'lucide-react';
 
 const skills = [
@@ -6,8 +7,12 @@ const skills = [
     name: 'C Programming',
     icon: <span className="text-3xl font-bold text-muted-foreground">C</span>,
   },
-  { name: 'Java', icon: <Coffee className="h-10 w-10" /> },
-  { name: 'AWS Basics', icon: <Cloud className="h-10 w-10" /> },
+  { name: 'Java', icon: <Coffee className="h-10 w-10" />, highlighted: true },
+  {
+    name: 'AWS Basics',
+    icon: <Cloud className="h-10 w-10" />,
+    highlighted: true,
+  },
   {
     name: 'Firebase',
     icon: <span className="text-3xl font-bold text-muted-foreground">FB</span>,
@@ -58,10 +63,23 @@ export function Skills() {
               key={skill.name}
               className="flex flex-col items-center justify-center gap-2 text-center"
             >
-              <div className="flex h-24 w-24 items-center justify-center border-2 border-border bg-card shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-all duration-300 hover:shadow-[6px_6px_0px_0px_hsl(var(--primary))]">
+              <div
+                className={cn(
+                  'flex h-24 w-24 items-center justify-center border-2 border-border bg-card shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-all duration-300 hover:shadow-[6px_6px_0px_0px_hsl(var(--primary))]',
+                  skill.highlighted &&
+                    'shadow-[6px_6px_0px_0px_hsl(var(--primary))] text-primary'
+                )}
+              >
                 {skill.icon}
               </div>
-              <p className="text-lg font-semibold">{skill.name}</p>
+              <p
+                className={cn(
+                  'text-lg font-semibold',
+                  skill.highlighted && 'text-primary'
+                )}
+              >
+                {skill.name}
+              </p>
             </div>
           ))}
         </div>

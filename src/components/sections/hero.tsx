@@ -30,13 +30,18 @@ export function Hero() {
           </div>
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
             <p className="text-lg font-medium text-muted-foreground md:text-xl">
-              Java | Data Systems | Web Apps | Cloud Computing
+              <span className="font-semibold text-primary">Java</span> | Data
+              Systems | Web Apps |{' '}
+              <span className="font-semibold text-primary">
+                Cloud Computing
+              </span>
             </p>
           </div>
           <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
             A software engineering student focused on enterprise-level
-            scalability. By leveraging Big Data and AWS Cloud environments, I
-            create systems designed for high-stakes performance.
+            scalability. By leveraging Big Data and{' '}
+            <strong className="font-bold text-primary">AWS</strong> Cloud
+            environments, I create systems designed for high-stakes performance.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
             <Button asChild size="lg">

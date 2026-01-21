@@ -15,8 +15,9 @@ const projects = [
     title: 'AdSync:Personalized ads by Eye-Tracking',
     description:
       'An innovative system using eye tracking via webcam to personalize ad content in real-time. Built with Python, SQLite, HTML, CSS, and JavaScript.',
-    imageUrl: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxleWV8ZW58MHx8fHwxNzE4NzQ1MjA3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    imageDescription: 'A close-up of a human eye with digital overlay',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517315003714-41c5894132b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxleWUlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTcyMDczMTg3N3ww&ixlib=rb-4.0.3&q=80&w=1080',
+    imageDescription: 'An artistic image of an eye reflecting light',
     imageHint: 'eye technology',
     tags: ['Python', 'SQLite', 'HTML', 'CSS', 'JS'],
     link: '#',
@@ -25,7 +26,8 @@ const projects = [
     title: 'EduShare Portal',
     description:
       'A collaborative platform for students to share educational resources, notes, and previous year papers. Features real-time updates with Firebase.',
-    imageUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NzAyMTMwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    imageUrl:
+      'https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NzAyMTMwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     imageDescription: 'EduShare Portal',
     imageHint: 'student collaboration',
     tags: ['Firebase', 'Next.js', 'Education', 'P2P'],
