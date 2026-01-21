@@ -28,14 +28,6 @@ const projects = [
     tags: ['Firebase', 'Next.js', 'Education', 'P2P'],
     link: '#',
   },
-  {
-    title: 'Big Data Analytics Platform',
-    description:
-      'A scalable platform for processing and analyzing large datasets to derive business insights. Showcases proficiency in data handling and visualization.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-3'),
-    tags: ['Big Data', 'Python', 'Data Viz'],
-    link: '#',
-  },
 ];
 
 export function Projects() {
