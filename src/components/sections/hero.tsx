@@ -65,7 +65,7 @@ export function Hero() {
           )}
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2">
         <Link
           href="#about"
           aria-label="Scroll to next section"
