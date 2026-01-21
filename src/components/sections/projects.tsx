@@ -53,18 +53,16 @@ export function Projects() {
               key={project.title}
               className="group flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[8px_8px_0px_0px_hsl(var(--primary))]"
             >
-              {project.imageUrl && (
-                <div className="overflow-hidden border-b-2 border-border">
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.imageDescription}
-                    data-ai-hint={project.imageHint}
-                    width={600}
-                    height={400}
-                    className="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                  />
-                </div>
-              )}
+              <div className="overflow-hidden border-b-2 border-border">
+                <Image
+                  src={project.imageUrl}
+                  alt={project.imageDescription}
+                  data-ai-hint={project.imageHint}
+                  width={600}
+                  height={400}
+                  className="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                />
+              </div>
               <CardHeader>
                 <CardTitle className="font-headline text-2xl">
                   {project.title}
