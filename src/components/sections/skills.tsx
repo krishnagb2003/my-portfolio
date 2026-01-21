@@ -1,5 +1,4 @@
 import { Badge } from '@/components/ui/badge';
-import { cn } from '@/lib/utils';
 import {
   Cloud,
   Code,
@@ -70,12 +69,12 @@ export function Skills() {
           {skills.map((skill: { name: string; icon: JSX.Element }) => (
             <div
               key={skill.name}
-              className="group flex flex-col items-center justify-center gap-2 text-center"
+              className="flex flex-col items-center justify-center gap-2 text-center"
             >
-              <div className="flex h-24 w-24 items-center justify-center border-2 border-border bg-card text-foreground shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-all duration-300 group-hover:text-primary group-hover:shadow-[6px_6px_0px_0px_hsl(var(--primary))]">
+              <div className="flex h-24 w-24 items-center justify-center border-2 border-border bg-card text-primary shadow-[4px_4px_0px_0px_hsl(var(--border))]">
                 {skill.icon}
               </div>
-              <p className="text-lg font-semibold text-foreground transition-colors duration-300 group-hover:text-primary">
+              <p className="text-lg font-semibold text-foreground">
                 {skill.name}
               </p>
             </div>
