@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
@@ -16,7 +15,12 @@ const projects = [
     title: 'AdSync:Personalized ads by Eye-Tracking',
     description:
       'An innovative system using eye tracking via webcam to personalize ad content in real-time. Built with Python, SQLite, HTML, CSS, and JavaScript.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-1'),
+    image: {
+      id: 'project-1',
+      description: 'AdSync: Personalized ads by Eye-Tracking',
+      imageUrl: 'https://images.unsplash.com/photo-1550745165-9bc0b252726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXRybyUyMHRlY2h8ZW58MHx8fHwxNzcwMjEzMDIxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      imageHint: 'retro tech'
+    },
     tags: ['Python', 'SQLite', 'HTML', 'CSS', 'JS'],
     link: '#',
   },
@@ -24,7 +28,12 @@ const projects = [
     title: 'EduShare Portal',
     description:
       'A collaborative platform for students to share educational resources, notes, and previous year papers. Features real-time updates with Firebase.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-2'),
+    image: {
+      id: 'project-2',
+      description: 'EduShare Portal',
+      imageUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NzAyMTMwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      imageHint: 'student collaboration'
+    },
     tags: ['Firebase', 'Next.js', 'Education', 'P2P'],
     link: '#',
   },
