@@ -55,11 +55,9 @@ export function Contact() {
       <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
           <Badge variant="outline">Contact</Badge>
-          <TextAnimation
-            as="h2"
-            words={["LET'S WORK TOGETHER"]}
-            className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
-          />
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Get In Touch
+          </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Have a project in mind or just want to say hi? Feel free to reach
             out. You can email me directly at{' '}
@@ -160,6 +158,13 @@ export function Contact() {
               <Twitter className="h-8 w-8" />
             </Link>
           </div>
+        </div>
+        <div className="mt-16 text-center">
+          <TextAnimation
+            as="h3"
+            words={["Let's work together.", 'Send a message.']}
+            className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+          />
         </div>
       </div>
     </section>
