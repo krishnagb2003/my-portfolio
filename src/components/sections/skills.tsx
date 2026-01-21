@@ -33,6 +33,10 @@ const skills = [
     name: 'Capcut',
     icon: <span className="text-3xl font-bold text-muted-foreground">CC</span>,
   },
+  {
+    name: 'C Programming',
+    icon: <span className="text-3xl font-bold text-muted-foreground">C</span>,
+  },
 ];
 
 export function Skills() {
