@@ -9,14 +9,14 @@
     {
       "id": "project-1",
       "description": "AdSync: Personalized ads by Eye-Tracking",
-      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb25hbGl6ZWQlMjBhZHZlcnRpc2luZ3xlbnwwfHx8fDE3NzAyMTI4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "personalized advertising"
+      "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXRybyUyMHRlY2h8ZW58MHx8fHwxNzcwMjEzMDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "retro tech"
     },
     {
       "id": "project-2",
       "description": "EduShare Portal",
-      "imageUrl": "https://images.unsplash.com/photo-1762330915716-69ffffeeee95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlZHVjYXRpb24lMjBwbGF0Zm9ybXxlbnwwfHx8fDE3Njg5NzU1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "education platform"
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NzAyMTMwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student collaboration"
     }
   ]
 }
