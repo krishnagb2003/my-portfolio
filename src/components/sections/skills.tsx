@@ -4,9 +4,9 @@ import {
   Cloud,
   Code,
   Coffee,
-  Film,
+  Clapperboard,
   FileCode,
-  LayoutTemplate,
+  DraftingCompass,
   Paintbrush,
   Scissors,
   Flame,
@@ -47,12 +47,12 @@ const skills = [
   },
   {
     name: 'Canva',
-    icon: <LayoutTemplate className="h-10 w-10" />,
+    icon: <DraftingCompass className="h-10 w-10" />,
     highlighted: true,
   },
   {
     name: 'DaVinci Resolve (Basics)',
-    icon: <Film className="h-10 w-10" />,
+    icon: <Clapperboard className="h-10 w-10" />,
     highlighted: true,
   },
   {
