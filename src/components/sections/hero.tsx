@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { TextAnimation } from '@/components/effects/text-animation';
+import { TypewriterAnimation } from '@/components/effects/typewriter-animation';
 import { ChevronDown } from 'lucide-react';
 
 export function Hero() {
@@ -26,12 +26,8 @@ export function Hero() {
         {/* Left column - Text content */}
         <div className="flex flex-col items-center space-y-6 text-center lg:col-span-2">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <TextAnimation
-              words={[
-                'PORTFOLIO OF KRISHNAKUMAR',
-                'SOFTWARE ENGINEER',
-                'CREATIVE DEVELOPER',
-              ]}
+            <TypewriterAnimation
+              text="PORTFOLIO OF KRISHNAKUMAR"
               className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
             />
           </div>
