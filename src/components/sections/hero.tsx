@@ -17,13 +17,13 @@ export function Hero() {
         className="absolute inset-0 -z-10"
       >
         <div className="absolute inset-0 bg-background" />
-        <div className="animate-blob-move absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--primary)/0.1),transparent)]" />
-        <div className="animate-blob-move absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--secondary)/0.1),transparent)] [animation-delay:-2s]" />
+        <div className="animate-blob-move absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--primary)/0.2),transparent)]" />
+        <div className="animate-blob-move absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--primary)/0.15),transparent)] [animation-delay:-2s]" />
       </div>
 
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
         {/* Left column - Text content */}
-        <div className="flex flex-col items-center space-y-6 text-center">
+        <div className="flex flex-col items-center space-y-6 text-center lg:col-span-2">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
             <TextAnimation />
           </div>
