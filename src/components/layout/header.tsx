@@ -17,6 +17,7 @@ import {
   SheetDescription,
 } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
+import { NegativeMaskEffect } from '@/components/effects/negative-mask-effect';
 
 export function Header() {
   return (
@@ -112,7 +113,9 @@ export function Header() {
         {/* Centered Title */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
-            <span className="text-lg font-bold font-headline">Portfolio</span>
+            <NegativeMaskEffect>
+              <span className="text-lg font-bold font-headline">Portfolio</span>
+            </NegativeMaskEffect>
           </Link>
         </div>
 

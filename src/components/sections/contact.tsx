@@ -20,7 +20,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { submitContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
 import { contactSchema } from '@/lib/schemas';
-import { TextAnimation } from '../effects/text-animation';
+import { DeparturesBoardAnimation } from '../effects/departures-board-animation';
 
 export function Contact() {
   const { toast } = useToast();
@@ -160,13 +160,13 @@ export function Contact() {
           </div>
         </div>
         <div className="mt-16 text-center">
-          <TextAnimation
+          <DeparturesBoardAnimation
             as="h3"
             words={["Let's Work Together", 'Send message']}
             className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
           >
             <ArrowRight className="h-8 w-8" />
-          </TextAnimation>
+          </DeparturesBoardAnimation>
         </div>
       </div>
     </section>
