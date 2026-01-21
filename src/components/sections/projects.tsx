@@ -15,9 +15,9 @@ const projects = [
     title: 'AdSync:Personalized ads by Eye-Tracking',
     description:
       'An innovative system using eye tracking via webcam to personalize ad content in real-time. Built with Python, SQLite, HTML, CSS, and JavaScript.',
-    imageUrl: 'https://images.unsplash.com/photo-1550745165-9bc0b252726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXRybyUyMHRlY2h8ZW58MHx8fHwxNzcwMjEzMDIxfDA&ixlib=rb-4.1.0&q=80&w=1080',
-    imageDescription: 'AdSync: Personalized ads by Eye-Tracking',
-    imageHint: 'retro tech',
+    imageUrl: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MHx8fHwxNzE4NzQ0NzMzfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    imageDescription: 'Abstract technology background',
+    imageHint: 'abstract technology',
     tags: ['Python', 'SQLite', 'HTML', 'CSS', 'JS'],
     link: '#',
   },
