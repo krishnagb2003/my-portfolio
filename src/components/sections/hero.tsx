@@ -16,8 +16,7 @@ export function Hero() {
       <div className="container mx-auto px-4 text-center md:px-6">
         <div className="flex flex-col items-center space-y-6">
           <div className="relative mb-4">
-            <div className="absolute -inset-2 animate-pulse rounded-full bg-primary/20 blur-2xl"></div>
-            <div className="relative flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 md:h-32 md:w-32">
+            <div className="relative flex h-24 w-24 items-center justify-center border-2 border-border bg-primary/10 md:h-32 md:w-32">
               <Code className="h-12 w-12 text-primary md:h-16 md:w-16" />
             </div>
           </div>
@@ -41,7 +40,7 @@ export function Hero() {
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
         <Link href="#projects" aria-label="Scroll to projects">
-          <div className="animate-bounce rounded-full bg-card/50 p-2 backdrop-blur-sm ring-1 ring-border">
+          <div className="animate-bounce border-2 border-border bg-card/50 p-2 backdrop-blur-sm">
             <ArrowDown className="h-6 w-6 text-foreground" />
           </div>
         </Link>

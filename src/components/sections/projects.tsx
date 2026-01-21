@@ -56,10 +56,10 @@ export function Projects() {
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="group flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20"
+              className="group flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[8px_8px_0px_0px_hsl(var(--primary))]"
             >
               {project.image && (
-                <div className="overflow-hidden">
+                <div className="overflow-hidden border-b-2 border-border">
                   <Image
                     src={project.image.imageUrl}
                     alt={project.image.description}

@@ -40,7 +40,7 @@ export function Skills() {
               key={skill.name}
               className="flex flex-col items-center justify-center gap-2"
             >
-              <div className="flex h-24 w-24 items-center justify-center rounded-full border-2 border-border bg-card shadow-lg transition-all duration-300 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+              <div className="flex h-24 w-24 items-center justify-center border-2 border-border bg-card shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-all duration-300 hover:shadow-[6px_6px_0px_0px_hsl(var(--primary))]">
                 {skill.icon}
               </div>
               <p className="text-lg font-semibold">{skill.name}</p>
