@@ -15,12 +15,9 @@ const projects = [
     title: 'AdSync:Personalized ads by Eye-Tracking',
     description:
       'An innovative system using eye tracking via webcam to personalize ad content in real-time. Built with Python, SQLite, HTML, CSS, and JavaScript.',
-    image: {
-      id: 'project-1',
-      description: 'AdSync: Personalized ads by Eye-Tracking',
-      imageUrl: 'https://images.unsplash.com/photo-1550745165-9bc0b252726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXRybyUyMHRlY2h8ZW58MHx8fHwxNzcwMjEzMDIxfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      imageHint: 'retro tech'
-    },
+    imageUrl: 'https://images.unsplash.com/photo-1550745165-9bc0b252726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXRybyUyMHRlY2h8ZW58MHx8fHwxNzcwMjEzMDIxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    imageDescription: 'AdSync: Personalized ads by Eye-Tracking',
+    imageHint: 'retro tech',
     tags: ['Python', 'SQLite', 'HTML', 'CSS', 'JS'],
     link: '#',
   },
@@ -28,12 +25,9 @@ const projects = [
     title: 'EduShare Portal',
     description:
       'A collaborative platform for students to share educational resources, notes, and previous year papers. Features real-time updates with Firebase.',
-    image: {
-      id: 'project-2',
-      description: 'EduShare Portal',
-      imageUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NzAyMTMwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      imageHint: 'student collaboration'
-    },
+    imageUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NzAyMTMwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    imageDescription: 'EduShare Portal',
+    imageHint: 'student collaboration',
     tags: ['Firebase', 'Next.js', 'Education', 'P2P'],
     link: '#',
   },
@@ -59,12 +53,12 @@ export function Projects() {
               key={project.title}
               className="group flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[8px_8px_0px_0px_hsl(var(--primary))]"
             >
-              {project.image && (
+              {project.imageUrl && (
                 <div className="overflow-hidden border-b-2 border-border">
                   <Image
-                    src={project.image.imageUrl}
-                    alt={project.image.description}
-                    data-ai-hint={project.image.imageHint}
+                    src={project.imageUrl}
+                    alt={project.imageDescription}
+                    data-ai-hint={project.imageHint}
                     width={600}
                     height={400}
                     className="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
