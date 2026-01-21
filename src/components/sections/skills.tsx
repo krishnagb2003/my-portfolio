@@ -69,9 +69,9 @@ export function Skills() {
           {skills.map((skill: { name: string; icon: JSX.Element }) => (
             <div
               key={skill.name}
-              className="flex flex-col items-center justify-center gap-2 text-center"
+              className="group flex flex-col items-center justify-center gap-2 text-center"
             >
-              <div className="flex h-24 w-24 items-center justify-center border-2 border-border bg-card text-foreground shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-colors hover:text-primary">
+              <div className="flex h-24 w-24 items-center justify-center border-2 border-border bg-card text-foreground shadow-[4px_4px_0px_0px_hsl(var(--border))] transition-colors group-hover:text-primary">
                 {skill.icon}
               </div>
               <p className="text-lg font-semibold text-foreground">
