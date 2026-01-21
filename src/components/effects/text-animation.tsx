@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const words = ['Java', 'Data Systems', 'Web Apps', 'Cloud'];
+const words = ['Krishnakumar', 'Java', 'Data Systems', 'Web Apps', 'Cloud'];
 const typingDelay = 150;
 const erasingDelay = 100;
 const newWordDelay = 2000;
@@ -39,9 +39,9 @@ export function TextAnimation() {
   }, [text, isDeleting, wordIndex]);
 
   return (
-    <h2 className="text-xl text-muted-foreground md:text-2xl lg:text-3xl font-light tracking-tight">
-      I build <span className="font-medium text-primary">{text}</span>
+    <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+      {text}
       <span className="animate-pulse font-light text-primary">|</span>
-    </h2>
+    </h1>
   );
 }

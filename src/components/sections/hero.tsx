@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowDown } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { TextAnimation } from '@/components/effects/text-animation';
@@ -11,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen w-full items-center overflow-hidden py-20 pt-32 lg:pt-20"
+      className="relative flex min-h-screen w-full items-center justify-center overflow-hidden py-20 text-center"
     >
       <div
         aria-hidden="true"
@@ -25,10 +24,7 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
         {/* Left column - Text content */}
         <div className="flex flex-col items-center space-y-6 text-center">
-          <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-in fade-in slide-in-from-bottom-4 duration-500">
-            Krishnakumar
-          </h1>
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
             <TextAnimation />
           </div>
           <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
@@ -62,16 +58,6 @@ export function Hero() {
             </div>
           )}
         </div>
-      </div>
-
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <Link
-          href="#about"
-          aria-label="Scroll to next section"
-          className="animate-bounce"
-        >
-          <ArrowDown className="h-6 w-6 text-muted-foreground" />
-        </Link>
       </div>
     </section>
   );
