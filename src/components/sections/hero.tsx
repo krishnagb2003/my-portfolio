@@ -30,6 +30,7 @@ export function Hero() {
               text="PORTFOLIO OF KRISHNAKUMAR"
               className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
               cursorClassName="text-primary"
+              continuous
             />
           </div>
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">

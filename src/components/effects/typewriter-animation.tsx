@@ -9,31 +9,49 @@ export function TypewriterAnimation({
   as: Tag = 'h1',
   speed = 100,
   cursorClassName,
+  continuous = false,
+  delay = 3000,
 }: {
   text: string;
   className?: string;
   as?: React.ElementType;
   speed?: number;
   cursorClassName?: string;
+  continuous?: boolean;
+  delay?: number;
 }) {
   const [displayedText, setDisplayedText] = useState('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   useEffect(() => {
-    setDisplayedText('');
-    setIsTypingComplete(false);
-    let i = 0;
-    const intervalId = setInterval(() => {
-      if (i < text.length) {
-        setDisplayedText(text.substring(0, i + 1));
-        i++;
-      } else {
-        clearInterval(intervalId);
-        setIsTypingComplete(true);
-      }
-    }, speed);
-    return () => clearInterval(intervalId);
-  }, [text, speed]);
+    let typingIntervalId: number;
+    let restartTimeoutId: number;
+
+    const startAnimation = () => {
+      setDisplayedText('');
+      setIsTypingComplete(false);
+      let i = 0;
+      typingIntervalId = window.setInterval(() => {
+        if (i < text.length) {
+          setDisplayedText(text.substring(0, i + 1));
+          i++;
+        } else {
+          window.clearInterval(typingIntervalId);
+          setIsTypingComplete(true);
+          if (continuous) {
+            restartTimeoutId = window.setTimeout(startAnimation, delay);
+          }
+        }
+      }, speed);
+    };
+
+    startAnimation();
+
+    return () => {
+      window.clearInterval(typingIntervalId);
+      window.clearTimeout(restartTimeoutId);
+    };
+  }, [text, speed, continuous, delay]);
 
   return (
     <Tag className={cn('relative', className)}>
