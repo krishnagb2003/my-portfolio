@@ -50,14 +50,6 @@ export function Header() {
                   </SheetClose>
                   <SheetClose asChild>
                     <Link
-                      href="#live"
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      Live
-                    </Link>
-                  </SheetClose>
-                  <SheetClose asChild>
-                    <Link
                       href="#skills"
                       className="text-muted-foreground hover:text-foreground"
                     >
@@ -95,9 +87,6 @@ export function Header() {
                 <MenubarContent>
                   <MenubarItem asChild>
                     <Link href="#about">About</Link>
-                  </MenubarItem>
-                  <MenubarItem asChild>
-                    <Link href="#live">Live</Link>
                   </MenubarItem>
                   <MenubarItem asChild>
                     <Link href="#skills">Skills</Link>
