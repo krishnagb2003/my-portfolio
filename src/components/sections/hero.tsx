@@ -22,7 +22,7 @@ export function Hero() {
         <div className="animate-blob-move absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--primary)/0.15),transparent)] [animation-delay:-2s]" />
       </div>
 
-      <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
+      <div className="container mx-auto grid -translate-y-8 grid-cols-1 items-center gap-12 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
         {/* Left column - Text content */}
         <div className="flex flex-col items-center space-y-6 text-center lg:col-span-2">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
