@@ -46,3 +46,4 @@ In the project directory, you can run:
 -   `npm run build`: Builds the app for production to the `.next` folder.
 -   `npm start`: Starts a Next.js production server.
 -   `npm run lint`: Runs the linter to check for code quality issues.
+# my-portfolio
