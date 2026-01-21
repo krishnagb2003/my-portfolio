@@ -1,45 +1,55 @@
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
-import { Cloud, Coffee } from 'lucide-react';
+import {
+  Cloud,
+  Code,
+  Coffee,
+  Database,
+  Film,
+  FileCode,
+  LayoutTemplate,
+  Paintbrush,
+  PenTool,
+  Scissors,
+} from 'lucide-react';
 
 const skills = [
   {
     name: 'C Programming',
-    icon: <span className="text-3xl font-bold text-muted-foreground">C</span>,
+    icon: <Code className="h-10 w-10" />,
   },
-  { name: 'Java', icon: <Coffee className="h-10 w-10" />, highlighted: true },
+  { name: 'Java', icon: <Coffee className="h-10 w-10" /> },
   {
     name: 'AWS Basics',
     icon: <Cloud className="h-10 w-10" />,
-    highlighted: true,
   },
   {
     name: 'Firebase',
-    icon: <span className="text-3xl font-bold text-muted-foreground">FB</span>,
+    icon: <Database className="h-10 w-10" />,
   },
   {
     name: 'HTML',
-    icon: <span className="text-3xl font-bold text-muted-foreground">HTML</span>,
+    icon: <FileCode className="h-10 w-10" />,
   },
   {
     name: 'CSS',
-    icon: <span className="text-3xl font-bold text-muted-foreground">CSS</span>,
+    icon: <Paintbrush className="h-10 w-10" />,
   },
   {
     name: 'Figma',
-    icon: <span className="text-3xl font-bold text-muted-foreground">FG</span>,
+    icon: <PenTool className="h-10 w-10" />,
   },
   {
     name: 'Canva',
-    icon: <span className="text-3xl font-bold text-muted-foreground">CV</span>,
+    icon: <LayoutTemplate className="h-10 w-10" />,
   },
   {
     name: 'DaVinci Resolve (Basics)',
-    icon: <span className="text-3xl font-bold text-muted-foreground">DR</span>,
+    icon: <Film className="h-10 w-10" />,
   },
   {
     name: 'Capcut',
-    icon: <span className="text-3xl font-bold text-muted-foreground">CC</span>,
+    icon: <Scissors className="h-10 w-10" />,
   },
 ];
 
@@ -58,7 +68,7 @@ export function Skills() {
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-2 justify-items-center gap-8 py-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 md:gap-12">
-          {skills.map((skill) => (
+          {skills.map((skill: {name: string, icon: JSX.Element, highlighted?: boolean}) => (
             <div
               key={skill.name}
               className="flex flex-col items-center justify-center gap-2 text-center"
