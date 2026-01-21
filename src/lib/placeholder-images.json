@@ -8,9 +8,9 @@
     },
     {
       "id": "project-1",
-      "description": "AI Eye-Tracking System",
-      "imageUrl": "https://images.unsplash.com/photo-1746209221074-301750d1fb8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxleWUlMjB0cmFja2luZ3xlbnwwfHx8fDE3Njg5NzU1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "eye tracking"
+      "description": "AdSync: Personalized ads by Eye-Tracking",
+      "imageUrl": "https://images.unsplash.com/photo-1587614299498-28347e3473b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxleWUlMjB0cmFja2luZyUyMGFkJTIwcGVyc29uYWxpemF0aW9ufGVufDB8fHx8MTc3MDEzMDUyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eye tracking advertising"
     },
     {
       "id": "project-2",

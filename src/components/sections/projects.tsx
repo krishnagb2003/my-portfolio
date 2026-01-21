@@ -13,11 +13,11 @@ import { ArrowRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'AI Eye-Tracking Ad Personalization',
+    title: 'AdSync:Personalized ads by Eye-Tracking',
     description:
-      'An innovative system using AI-powered eye tracking via webcam to personalize ad content in real-time. Built with Supabase for the backend.',
+      'An innovative system using eye tracking via webcam to personalize ad content in real-time. Built with Python, SQLite, HTML, CSS, and JavaScript.',
     image: PlaceHolderImages.find((p) => p.id === 'project-1'),
-    tags: ['AI', 'React', 'Supabase', 'TypeScript'],
+    tags: ['Python', 'SQLite', 'HTML', 'CSS', 'JS'],
     link: '#',
   },
   {
