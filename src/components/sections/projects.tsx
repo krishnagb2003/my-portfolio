@@ -19,7 +19,7 @@ const projects = [
       id: 'project-1',
       description: 'AdSync: Personalized ads by Eye-Tracking',
       imageUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MHx8fHwxNzE4NzQ0NzMzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      imageHint: 'abstract technology'
+      imageHint: 'ecommerce website'
     },
     tags: ['Python', 'SQLite', 'HTML', 'CSS', 'JS'],
     link: '#',
