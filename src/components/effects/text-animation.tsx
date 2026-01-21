@@ -8,11 +8,13 @@ export function TextAnimation({
   className,
   as: Tag = 'h1',
   duration = 3000,
+  children,
 }: {
   words: string[];
   className?: string;
   as?: React.ElementType;
   duration?: number;
+  children?: React.ReactNode;
 }) {
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState('in');
@@ -36,11 +38,13 @@ export function TextAnimation({
     <Tag
       className={cn(
         className,
+        'flex items-center justify-center gap-4',
         'transition-opacity duration-500 ease-in-out',
         fade === 'in' ? 'opacity-100' : 'opacity-0'
       )}
     >
-      {words[index] || words[0]}
+      <span>{words[index] || words[0]}</span>
+      {children}
     </Tag>
   );
 }

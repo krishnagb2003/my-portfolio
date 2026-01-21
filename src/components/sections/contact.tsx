@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -162,9 +162,11 @@ export function Contact() {
         <div className="mt-16 text-center">
           <TextAnimation
             as="h3"
-            words={["Let's Work Together", 'Send Message']}
+            words={["Let's Work Together", 'Send message']}
             className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
-          />
+          >
+            <ArrowRight className="h-8 w-8" />
+          </TextAnimation>
         </div>
       </div>
     </section>
