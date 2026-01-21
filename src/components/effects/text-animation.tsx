@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const words = ['KRISHNAKUMAR', 'DEVELOPER PORTFOLIO'];
+const words = ['PORTFOLIO OF KRISHNAKUMAR'];
 const typingDelay = 150;
 const erasingDelay = 100;
 const newWordDelay = 2000;
