@@ -162,7 +162,7 @@ export function Contact() {
         <div className="mt-16 text-center">
           <TextAnimation
             as="h3"
-            words={["Let's work together.", 'Send a message.']}
+            words={["Let's Work Together", 'Send Message']}
             className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
           />
         </div>

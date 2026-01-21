@@ -35,7 +35,7 @@ export function Hero() {
             <p className="text-lg font-medium text-muted-foreground md:text-xl">
               <span className="font-semibold text-primary">Java</span> |{' '}
               <span className="font-semibold text-primary">Web Apps</span> |{' '}
-              <span className="font-semibold">
+              <span className="font-semibold text-primary">
                 Cloud Computing
               </span>
             </p>
