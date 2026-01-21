@@ -23,7 +23,7 @@ export function Hero() {
 
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
         {/* Left column - Text content */}
-        <div className="flex flex-col items-center space-y-6 text-center lg:items-start lg:text-left">
+        <div className="flex flex-col items-center space-y-6 text-center">
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-in fade-in slide-in-from-bottom-4 duration-500">
             Krishnakumar
           </h1>
@@ -33,12 +33,11 @@ export function Hero() {
             scalability. By leveraging Big Data and AWS Cloud environments, I
             create systems designed for high-stakes performance.
           </p>
-          <div className="flex flex-col gap-4 sm:flex-row animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
-            <Button asChild size="lg">
-              <Link href="#projects">View My Work</Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <Link href="#contact">Get In Touch</Link>
+          <div className="flex animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
+            <Button asChild size="lg" variant="outline">
+              <Link href="#about">
+                Enter <ArrowDown className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -59,14 +58,6 @@ export function Hero() {
             </div>
           )}
         </div>
-      </div>
-
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <Link href="#projects" aria-label="Scroll to projects">
-          <div className="animate-bounce rounded-full border-2 border-border bg-card/50 p-2 backdrop-blur-sm">
-            <ArrowDown className="h-6 w-6 text-foreground" />
-          </div>
-        </Link>
       </div>
     </section>
   );
