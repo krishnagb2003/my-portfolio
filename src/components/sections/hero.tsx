@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { TextAnimation } from '@/components/effects/text-animation';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image');
@@ -23,17 +24,19 @@ export function Hero() {
 
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
         {/* Left column - Text content */}
-        <div className="flex flex-col items-start space-y-6 text-left">
+        <div className="flex flex-col items-center space-y-6 text-center">
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-in fade-in slide-in-from-bottom-4 duration-500">
             Krishnakumar
           </h1>
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
+            <TextAnimation />
+          </div>
           <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
-            Software Engineering Student | Java & Data Systems I engineer robust
-            software solutions with a primary focus on Java and enterprise-level
+            A software engineering student focused on enterprise-level
             scalability. By leveraging Big Data and AWS Cloud environments, I
             create systems designed for high-stakes performance.
           </p>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
             <Button asChild size="lg">
               <Link href="#projects">View My Work</Link>
             </Button>
