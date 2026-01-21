@@ -5,7 +5,6 @@ import { About } from '@/components/sections/about';
 import { Skills } from '@/components/sections/skills';
 import { Projects } from '@/components/sections/projects';
 import { Contact } from '@/components/sections/contact';
-import { ScrollingBanner } from '@/components/sections/scrolling-banner';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <Skills />
         <Projects />
         <Contact />
-        <ScrollingBanner />
       </main>
       <Footer />
     </div>
