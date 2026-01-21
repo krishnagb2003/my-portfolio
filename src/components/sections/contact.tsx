@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { Github, Linkedin, Twitter, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Instagram, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -21,6 +21,7 @@ import { submitContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
 import { contactSchema } from '@/lib/schemas';
 import { DeparturesBoardAnimation } from '../effects/departures-board-animation';
+import { RedditIcon } from '../icons/reddit-icon';
 
 export function Contact() {
   const { toast } = useToast();
@@ -134,28 +135,44 @@ export function Contact() {
           </Form>
           <div className="flex justify-center gap-6">
             <Link
-              href="#"
+              href="https://github.com/krishnagb2003"
               aria-label="GitHub"
               prefetch={false}
               className="text-muted-foreground transition-colors hover:text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Github className="h-8 w-8" />
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/krishnakumar-bhadrashetti-b57538382"
               aria-label="LinkedIn"
               prefetch={false}
               className="text-muted-foreground transition-colors hover:text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin className="h-8 w-8" />
             </Link>
             <Link
-              href="#"
-              aria-label="Twitter"
+              href="https://www.instagram.com/krishna.g.b"
+              aria-label="Instagram"
               prefetch={false}
               className="text-muted-foreground transition-colors hover:text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Twitter className="h-8 w-8" />
+              <Instagram className="h-8 w-8" />
+            </Link>
+            <Link
+              href="https://www.reddit.com/user/unEmployeee"
+              aria-label="Reddit"
+              prefetch={false}
+              className="text-muted-foreground transition-colors hover:text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <RedditIcon className="h-8 w-8" />
             </Link>
           </div>
         </div>
