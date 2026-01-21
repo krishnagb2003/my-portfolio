@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "hero-image",
+      "description": "A modern developer workspace with code on screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzE4NzQ0NzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "developer workspace"
+    },
+    {
       "id": "project-1",
       "description": "AI Eye-Tracking System",
       "imageUrl": "https://images.unsplash.com/photo-1746209221074-301750d1fb8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxleWUlMjB0cmFja2luZ3xlbnwwfHx8fDE3Njg5NzU1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
