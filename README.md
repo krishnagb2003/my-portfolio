@@ -1,4 +1,4 @@
-# Firebase Studio Portfolio
+# Portfolio
 
 This is a Next.js portfolio website created with Firebase Studio.
 
